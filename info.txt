@@ -1,0 +1,28 @@
+www.sch.com
+database:sch
+username:homestead
+password:secret
+
+
+user according to env file
+username: sch
+pwd:secret
+
+
+user at login
+Name:germain
+username:germain01
+email:germain@gmail.com
+pwd: kgf@1009
+
+when next you get 502 Bad gateway do this.
+
+1. Modify homestead.yaml file as follows.
+site:
+ -map:....
+  to:.....
+  php: "7.2"
+
+ 2. reload vagrant
+ run in cli
+ vagrant reload --provision

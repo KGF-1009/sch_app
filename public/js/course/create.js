@@ -1,0 +1,71 @@
+$(function(){
+
+	$('#createCourse').validate({
+		rules:
+		{
+			course_id:{
+				required:true,
+				minlength:2,
+				maxlength:8
+			},
+			cname:{
+				required:true,
+				minlength:2,
+				maxlength:20
+			},
+			coeff:{
+				required:true,
+				number:true,
+				min:1,
+				max:7
+			},
+			level:{
+				required:true,
+				number:true,
+				min:1,
+				max:7
+			},
+			department_id:{
+				min:1
+			}
+		},
+		messages:{
+			department_id:{
+				min:'Please choose a valid department.'
+			}
+		}
+		
+	});
+});
+
+
+/*
+		rules:
+		{
+			course_id:{
+				required:true,
+				minlength:2,
+				maxlength:8
+			},
+			cname:{
+				required:true,
+				minlength:2,
+				maxlength:20
+			},
+			coeff:{
+				required:true,
+				number:true,
+				min:1,
+				max:7
+			},
+			level:{
+				required:true,
+				number:true,
+				min:1,
+				max:7
+			},
+			department_id:{
+				min:0
+			}
+		}
+*/

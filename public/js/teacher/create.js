@@ -1,0 +1,62 @@
+$(function(){
+	$("#createTeacher").validate({
+		rules:{
+			
+			matricule:{
+				required:true,
+				minlength:2,
+				maxlength:5
+			}, 
+			fname:{
+				required:true,
+				minlength:2,
+				maxlength:25
+			},
+		
+			placeOfBirth:{
+				required:true,
+				minlength:2,
+				maxlength:25
+			},
+			email:{
+				required:true,
+				email:true
+			},
+			sex:{
+				required:true
+			},
+			role:{
+				required:true
+			},
+			diploma:{
+				required:true
+			},
+			nation:{
+				required:true
+			},
+			address:{
+				required:true,
+				minlength:2,
+				maxlength:25
+			},
+			tel:{
+				required:true,
+				minlength:2,
+				maxlength:20
+			},
+			dateOfBirth:{
+				required:true,
+				date:true
+			},
+			department_id:{
+				required:true,
+				min:1
+			}
+		},
+		messages:{
+			department_id:{
+				min:'Please choose a valid department.'
+			}
+		} 
+	}); 
+});

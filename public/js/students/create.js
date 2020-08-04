@@ -1,0 +1,52 @@
+$(function(){
+	$("#createStudent").validate({
+		rules:{
+			
+			student_id:{
+				required:true,
+				minlength:3,
+				maxlength:5
+			},
+			fname:{
+				required:true,
+				minlength:2,
+				maxlength:25
+			},
+			placeOfBirth:{
+				required:true,
+				minlength:2
+			},
+			level:{
+				required:true,
+				number:true
+			},
+			email:{
+				required:true,
+				email:true
+			},
+			sex:{
+				required:true
+			},
+			dateOfBirth:{
+				required:true,
+				date:true
+			},
+			address:{
+				required:true,
+				minlength:2
+			},
+			enrollement_date:{
+				required:true,
+			},
+			department_id:{
+				min:1
+			}
+
+		},
+		messages:{
+			department_id:{
+				min:"Please choose a valid department."
+			}
+		}
+	});
+});

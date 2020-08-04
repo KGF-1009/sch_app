@@ -1,0 +1,20 @@
+$(function(){
+	$("#createDepartment").validate({
+		rules:{
+			
+			teacher_id:{
+				required:false
+			},
+			name:{
+				required:true,
+				minlength:2,
+				maxlength:25
+			},
+			description:{
+				required:true,
+				minlength:5,
+				maxlength:250
+			}
+		}
+	});
+});

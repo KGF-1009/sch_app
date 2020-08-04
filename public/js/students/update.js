@@ -1,0 +1,46 @@
+$(function(){
+	$("#updateStudent").validate({
+		rules:{
+			
+			student_id:{
+				required:true,
+				minlength:2
+			},
+			fname:{
+				required:true,
+				minlength:2
+			},
+			sname:{
+				required:true,
+				minlength:2
+			},
+			placeOfBirth:{
+				required:true,
+				minlength:2
+			},
+			email:{
+				required:true,
+				minlength:2,
+				email:true
+			},
+			sex:{
+				required:true
+			},
+			dateOfBirth:{
+				required:true,
+				date:true
+			},
+			enrollement_date:{
+				required:true,
+				date:true
+			},
+			level:{
+				required:true,
+				max:7,
+				min:0
+			} 
+
+
+		}
+	});
+});
