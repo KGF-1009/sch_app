@@ -13,7 +13,7 @@
 					@include('shared.createStudentForm')
 
 				{!! Form::close()!!}
-		</div>
+		</div> 
 	</div>
 
 <style type="text/css">
